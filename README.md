@@ -32,12 +32,11 @@ source env/bin/activate
 
 3. **Install the required packages**:
 
-pip install -r requirements.txt
-
+pip install pandas numpy openpyxl
 
 4. **Run the application**:
 
-python portfolio_analysis.py
+python3 portfolio_analysis.py
 
 **USAGE**
 
