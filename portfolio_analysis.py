@@ -117,10 +117,10 @@ def allocate_portfolio(metrics_list, portfolio_worth):
             inverse_hvar = 1 / metrics['historical_var']
             inverse_mcvar = 1 / metrics['monte_carlo_var']
             normalized_metric = (
-                inverse_volatility / total_inverse_volatility + 
-                inverse_hvar / total_inverse_hvar + 
-                inverse_mcvar / total_inverse_mcvar
-            ) / 3
+                (inverse_volatility / total_inverse_volatility) * 0.33 + 
+                (inverse_hvar / total_inverse_hvar) * 0.33 + 
+                (inverse_mcvar / total_inverse_mcvar) * 0.33
+            )
             allocation = normalized_metric * portfolio_worth
             allocations.append((sheet_name, metrics, allocation))
         
@@ -169,6 +169,11 @@ def run_allocation(file_path, portfolio_worth):
             })
             results = pd.concat([results, stock_allocation_df], ignore_index=True)
 
+        # Format the results
+        results['Average Close'] = results['Average Close'].apply(lambda x: f"${x:,.2f}")
+        results['Average Daily Return'] = results['Average Daily Return'].apply(lambda x: f"{x:.6f}")
+        results['Volatility'] = results['Volatility'].apply(lambda x: f"{x:.6f}")
+        results['Historical VaR'] = results['Historical VaR'].apply(lambda x: f"{x:.6f}")
         results['Monte Carlo VaR'] = results['Monte Carlo VaR'].apply(lambda x: f"${x:,.2f}")
         results['Allocation'] = results['Allocation'].apply(lambda x: f"${x:,.2f}")
 
