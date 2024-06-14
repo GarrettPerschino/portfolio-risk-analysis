@@ -124,7 +124,15 @@ def allocate_portfolio(metrics_list, portfolio_worth):
             allocation = normalized_metric * portfolio_worth
             allocations.append((sheet_name, metrics, allocation))
         
-        return allocations
+        total_allocated = sum(allocation for _, _, allocation in allocations)
+        adjustment_factor = portfolio_worth / total_allocated
+
+        adjusted_allocations = []
+        for sheet_name, metrics, allocation in allocations:
+            adjusted_allocation = allocation * adjustment_factor
+            adjusted_allocations.append((sheet_name, metrics, adjusted_allocation))
+        
+        return adjusted_allocations
     except Exception as e:
         raise ValueError(f"Error allocating portfolio: {str(e)}")
 
