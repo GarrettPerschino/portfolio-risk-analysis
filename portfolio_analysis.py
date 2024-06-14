@@ -169,6 +169,9 @@ def run_allocation(file_path, portfolio_worth):
             })
             results = pd.concat([results, stock_allocation_df], ignore_index=True)
 
+        results['Monte Carlo VaR'] = results['Monte Carlo VaR'].apply(lambda x: f"${x:,.2f}")
+        results['Allocation'] = results['Allocation'].apply(lambda x: f"${x:,.2f}")
+
         print("Portfolio Allocation:")
         print(results.to_string(index=False))
 
