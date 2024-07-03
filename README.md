@@ -72,6 +72,20 @@ A Python-based GUI application that helps users allocate their investment portfo
 3. **Follow Universal Steps**:
     - After installing Homebrew and `pipx`, follow the universal steps to create a virtual environment, install required packages, and run your script.
 
+## Using the Project
+
+1. **Load Excel File**:
+    - Click the "Browse" button to select an Excel file containing stock data. The Excel file should have a 'Close' column for stock prices.
+
+2. **Enter Portfolio Worth**:
+    - Enter the total worth of your portfolio in the provided entry field.
+
+3. **Calculate Allocation**:
+    - Click the "Calculate Allocation" button to calculate the portfolio allocation based on the financial metrics.
+
+4. **View Results**:
+    - The results will be displayed in the table and a pie chart will visualize the allocation.
+
 ## License
 
 This project is licensed under the MIT License.
