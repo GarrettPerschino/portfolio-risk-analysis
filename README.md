@@ -47,12 +47,12 @@ A Python-based GUI application that helps users allocate their investment portfo
 
 3. **Install Required Packages**:
     ```bash
-    pip install matplotlib pandas numpy
+    pip3 install matplotlib pandas numpy
     ```
 
 4. **Run the Python Script**:
     ```bash
-    python portfolio_analysis.py
+    python3 portfolio_analysis.py
     ```
 
 ### Mac-Specific Instructions
