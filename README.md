@@ -26,6 +26,8 @@ A Python-based GUI application that helps users allocate their investment portfo
 
 ### Universal Steps
 
+#### Option 1: Cloning the Repository
+
 1. **Clone the Project Repository**:
     ```bash
     git clone https://github.com/GarrettPerschino/portfolio-risk-analysis.git
@@ -51,6 +53,46 @@ A Python-based GUI application that helps users allocate their investment portfo
     ```
 
 4. **Run the Python Script**:
+    ```bash
+    python3 portfolio_analysis.py
+    ```
+
+#### Option 2: Copying and Pasting the Code
+
+1. **Create a New Directory**:
+    ```bash
+    mkdir portfolio-allocation-tool
+    cd portfolio-allocation-tool
+    ```
+
+2. **Create and Open a New Python File**:
+    ```bash
+    nano portfolio_analysis.py
+    ```
+
+3. **Copy and Paste the Code**:
+    - Copy the complete code from your source and paste it into the `portfolio_analysis.py` file.
+    - Save and close the file (in `nano`, press `Ctrl + X`, then `Y`, then `Enter`).
+
+4. **Create and Activate a Virtual Environment**:
+    ```bash
+    python3 -m venv myenv
+    ```
+    - **Windows**:
+      ```bash
+      myenv\Scripts\activate
+      ```
+    - **Mac/Linux**:
+      ```bash
+      source myenv/bin/activate
+      ```
+
+5. **Install Required Packages**:
+    ```bash
+    pip3 install matplotlib pandas numpy
+    ```
+
+6. **Run the Python Script**:
     ```bash
     python3 portfolio_analysis.py
     ```
