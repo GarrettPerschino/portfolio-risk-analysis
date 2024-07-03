@@ -86,6 +86,20 @@ A Python-based GUI application that helps users allocate their investment portfo
 4. **View Results**:
     - The results will be displayed in the table and a pie chart will visualize the allocation.
 
+## Example Excel File
+
+The Excel file should contain the following columns:
+
+| Date       | Close  |
+|------------|--------|
+| 2023-01-01 | 150.75 |
+| 2023-01-02 | 152.30 |
+| 2023-01-03 | 148.90 |
+| 2023-01-04 | 149.55 |
+| 2023-01-05 | 151.00 |
+
+Ensure that the file has multiple sheets if you want to include data for multiple stocks. Each sheet should follow the same structure.
+
 ## License
 
 This project is licensed under the MIT License.
