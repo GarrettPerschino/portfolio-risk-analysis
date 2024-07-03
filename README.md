@@ -46,7 +46,7 @@ A Python-based GUI application that helps users allocate their investment portfo
 
 3. **Install Required Packages**:
     ```bash
-    pip install matplotlib pandas openpyxl numpy
+    pip install matplotlib pandas numpy
     ```
 
 4. **Run the Python Script**:
