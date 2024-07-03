@@ -15,7 +15,6 @@ A Python-based GUI application that helps users allocate their investment portfo
 - Python 3.x
 - matplotlib
 - pandas
-- openpyxl
 - numpy
 
 ## Setup and Running the Project Locally
