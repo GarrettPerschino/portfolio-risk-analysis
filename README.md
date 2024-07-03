@@ -27,7 +27,24 @@ A Python-based GUI application that helps users allocate their investment portfo
     cd portfolio-allocation-tool
     ```
 
-2. **Install the required Python packages:**
+2. **Create a virtual environment:**
+
+    ```bash
+    python3 -m venv venv
+    ```
+
+3. **Activate the virtual environment:**
+
+    - On macOS/Linux:
+      ```bash
+      source venv/bin/activate
+      ```
+    - On Windows:
+      ```bash
+      venv\Scripts\activate
+      ```
+
+4. **Install the required Python packages:**
 
     ```bash
     pip install pandas numpy matplotlib
@@ -35,13 +52,24 @@ A Python-based GUI application that helps users allocate their investment portfo
 
 ## Usage
 
-1. **Run the program:**
+1. **Ensure the virtual environment is activated:**
+
+    - On macOS/Linux:
+      ```bash
+      source venv/bin/activate
+      ```
+    - On Windows:
+      ```bash
+      venv\Scripts\activate
+      ```
+
+2. **Run the program:**
 
     ```bash
     python portfolio_allocation.py
     ```
 
-2. **Using the GUI:**
+3. **Using the GUI:**
 
     - **Load an Excel File:** Click on the `Browse` button to select an Excel file containing historical stock data. The file should have one or more sheets, each with a `Close` column representing the closing prices of the stock.
     - **Enter Portfolio Worth:** Input the total worth of your portfolio in the `Portfolio Worth` entry.
@@ -79,4 +107,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## Contact
 
 For any questions or suggestions, please open an issue or contact me at gaperschino@gmail.com
-
