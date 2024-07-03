@@ -13,97 +13,72 @@ A Python-based GUI application that helps users allocate their investment portfo
 ## Requirements
 
 - Python 3.x
-- Pandas
-- NumPy
-- Matplotlib
-- Tkinter (comes pre-installed with Python)
+- matplotlib
+- pandas
+- openpyxl
+- numpy
 
-## Installation
+## Setup and Running the Project Locally
 
-1. **Clone the repository:**
+### Prerequisites
 
+- Python 3.x installed on your machine. Download from [here](https://www.python.org/downloads/).
+
+### Universal Steps
+
+1. **Clone the Project Repository**:
     ```bash
-    git clone https://github.com/yourusername/portfolio-allocation-tool.git
-    cd portfolio-allocation-tool
+    git clone https://github.com/GarrettPerschino/portfolio-risk-analysis.git
+    cd portfolio-risk-analysis
     ```
 
-2. **Create a virtual environment:**
-
+2. **Create and Activate a Virtual Environment**:
     ```bash
-    python3 -m venv venv
+    python3 -m venv myenv
+    ```
+    - **Windows**:
+      ```bash
+      myenv\Scripts\activate
+      ```
+    - **Mac/Linux**:
+      ```bash
+      source myenv/bin/activate
+      ```
+
+3. **Install Required Packages**:
+    ```bash
+    pip install matplotlib pandas openpyxl numpy
     ```
 
-3. **Activate the virtual environment:**
-
-    - On macOS/Linux:
-      ```bash
-      source venv/bin/activate
-      ```
-    - On Windows:
-      ```bash
-      venv\Scripts\activate
-      ```
-
-4. **Install the required Python packages:**
-
+4. **Run the Python Script**:
     ```bash
-    pip install pandas numpy matplotlib
+    python /path/to/your/script.py
     ```
 
-## Usage
+### Mac-Specific Instructions
 
-1. **Ensure the virtual environment is activated:**
-
-    - On macOS/Linux:
-      ```bash
-      source venv/bin/activate
-      ```
-    - On Windows:
-      ```bash
-      venv\Scripts\activate
-      ```
-
-2. **Run the program:**
-
+1. **Install Homebrew**:
     ```bash
-    python portfolio_allocation.py
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
 
-3. **Using the GUI:**
+2. **Install pipx and Ensure Path**:
+    ```bash
+    brew install pipx
+    pipx ensurepath
+    ```
 
-    - **Load an Excel File:** Click on the `Browse` button to select an Excel file containing historical stock data. The file should have one or more sheets, each with a `Close` column representing the closing prices of the stock.
-    - **Enter Portfolio Worth:** Input the total worth of your portfolio in the `Portfolio Worth` entry.
-    - **Calculate Allocation:** Click the `Calculate Allocation` button to compute the financial metrics and allocate the portfolio.
-    - **View Results:** The results will be displayed in a table and a pie chart showing the allocation percentages.
-
-## Example
-
-Here is an example of how the Excel file should be structured:
-
-**Sheet1:**
-
-| Date       | Close |
-|------------|-------|
-| 2023-01-01 | 100.5 |
-| 2023-01-02 | 101.0 |
-| ...        | ...   |
-
-**Sheet2:**
-
-| Date       | Close |
-|------------|-------|
-| 2023-01-01 | 200.5 |
-| 2023-01-02 | 201.0 |
-| ...        | ...   |
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+3. **Follow Universal Steps**:
+    - After installing Homebrew and `pipx`, follow the universal steps to create a virtual environment, install required packages, and run your script.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Create a new Pull Request
 
-## Contact
+## License
 
-For any questions or suggestions, please open an issue or contact me at gaperschino@gmail.com
+This project is licensed under the MIT License.
