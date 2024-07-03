@@ -15,7 +15,9 @@ A Python-based GUI application that helps users allocate their investment portfo
 - Python 3.x
 - matplotlib
 - pandas
+- openpyxl
 - numpy
+- tkinter
 
 ## Setup and Running the Project Locally
 
@@ -46,12 +48,12 @@ A Python-based GUI application that helps users allocate their investment portfo
 
 3. **Install Required Packages**:
     ```bash
-    pip install matplotlib pandas numpy
+    pip install matplotlib pandas openpyxl numpy
     ```
 
 4. **Run the Python Script**:
     ```bash
-    python /path/to/your/script.py
+    python portfolio_analysis.py
     ```
 
 ### Mac-Specific Instructions
@@ -69,14 +71,6 @@ A Python-based GUI application that helps users allocate their investment portfo
 
 3. **Follow Universal Steps**:
     - After installing Homebrew and `pipx`, follow the universal steps to create a virtual environment, install required packages, and run your script.
-
-## Contributing
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature-branch`)
-5. Create a new Pull Request
 
 ## License
 
